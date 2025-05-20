@@ -12,8 +12,8 @@ function AddShotObservation() {
   const navigate = useNavigate();
   const { showSuccess, showError, ToastComponent } = useToast(); // 👈 grab toast API
   const [formData, setFormData] = useState({
-    shotId: "",
-    shotVariationId: "",
+    shotType: "",
+    shotVariation: "",
     performanceRating: "",
     comments: "",
   });
@@ -71,8 +71,8 @@ function AddShotObservation() {
           <FormControl fullWidth required>
             <InputLabel>Shot</InputLabel>
             <Select
-              name="shotId"
-              value={formData.shotId}
+              name="shotType"
+              value={formData.shotType}
               onChange={handleChange}
             >
               {Object.entries(shots)
@@ -87,8 +87,8 @@ function AddShotObservation() {
           <FormControl fullWidth required>
             <InputLabel>Shot Variation</InputLabel>
             <Select
-              name="shotVariationId"
-              value={formData.shotVariationId}
+              name="shotVariation"
+              value={formData.shotVariation}
               onChange={handleChange}
             >
               {Object.entries(variations).map(([id, v]) => (

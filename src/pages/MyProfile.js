@@ -306,8 +306,8 @@ function ObservationItem({
   let label = "";
   if (obs.shotType) {
     label += shots[obs.shotType]?.name || obs.shotType;
-    if (obs.shotVariationId) {
-      label += ` (${variations[obs.shotVariationId]?.name || obs.shotVariationId})`;
+    if (obs.shotVariation) {
+      label += ` (${variations[obs.shotVariation]?.name || obs.shotVariation})`;
     }
   } else if (obs.strategyType) {
     label += strategies[obs.strategyType]?.name || obs.strategyType;
