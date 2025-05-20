@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Codex Setup
+
+Codex runs `.codex/setup.sh` during environment setup to install all Node dependencies automatically. Once the setup script has finished you can start the development server locally with:
+
+```bash
+npm start
+```
+
+The app will open at [http://localhost:3000](http://localhost:3000).
+
 ## Available Scripts
 
 In the project directory, you can run:
