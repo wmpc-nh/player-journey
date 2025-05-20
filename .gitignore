@@ -134,3 +134,14 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Firebase logs and emulator data
+firebase-debug.log
+.firebase/
+
+# React build files (if you ever build locally)
+build/
+
+# VSCode settings
+.vscode/
