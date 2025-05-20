@@ -186,7 +186,7 @@ function SessionDetail() {
             {shotObservations.map(([id, item]) => (
               <ListItem key={id} divider alignItems="flex-start">
                 <ListItemText
-                  primary={`${shots[item.shotType]?.name || item.shotType} (${variations[item.shotVariationId]?.name || "—"}) - Rating: ${item.performanceRating}`}
+                  primary={`${shots[item.shotType]?.name || item.shotType} (${variations[item.shotVariation]?.name || "—"}) - Rating: ${item.performanceRating}`}
                   secondary={item.comments || "—"}
                 />
                 <Button

@@ -74,8 +74,8 @@ function AddStrategyObservation() {
           <FormControl fullWidth required>
             <InputLabel>Strategy</InputLabel>
             <Select
-              name="strategyId"
-              value={formData.strategyId}
+              name="strategyType"
+              value={formData.strategyType}
               onChange={handleChange}
             >
               {Object.entries(strategies)
